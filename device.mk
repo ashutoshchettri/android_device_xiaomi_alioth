@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Miuicamera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/products/miuicamera.mk)
 
